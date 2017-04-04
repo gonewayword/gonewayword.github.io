@@ -65,4 +65,26 @@ section#navigator {
       }
     }
   }
+  .slider {
+	  background: url('img/meMoji.png');
+	  height: 500px;
+	  .slide {
+		  height: 500px;
+	  }
+  }
+}
+
+section#rollover {
+	.budget-column {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 300px;
+	}
+	.budget-headers {
+		height: 300px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 }
