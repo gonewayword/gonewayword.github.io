@@ -22,16 +22,109 @@ Backtrace:
   font-family: monospace;
   content: "Errno::ENOENT: No such file or directory - structure.scss"; } */
 
-  div.logo-col {
-    text-align: center;
-    img#logo {
-      max-width: 150px;
-    }
-  }
+
+  /* Site Structure Styles */
 
   :root {
     --base-multiplier: 5px;
+    --bs-body-color: rgba(10, 10, 10, 60%);
+    .container-fluid {
+      max-width: 100%;
+      margin: 0;
+    }
+    h1 {
+      padding: 0 10px 5px 10px;
+      width: fit-content;
+    }
+    .hover-text {
+      border: 2px solid rgba(235, 174, 52, 0%);
+      border-radius: 6px;
+      &:hover {
+        cursor: pointer;
+        transition: all 0.4s ease-in-out;
+        border: 2px solid rgba(235, 174, 52, 80%);
+        border-radius: 6px;
+      }
+    }
+    div.logo-col {
+      text-align: center;
+      img#logo {
+        max-width: 150px;
+      }
+    }
+    .toolbar {
+      .toolbar-item-parent {
+        /* border: 2px solid rgba(235, 174, 52, 0%);
+        border-radius: 6px; */
+        padding: 4px;
+        /* @media screen and (min-width: 600px) {
+          width: 100%;
+        } */
+        /* &:hover {
+          cursor: pointer;
+          transition: all 0.4s ease-in-out;
+          border: 2px solid rgba(235, 174, 52, 80%);
+          border-radius: 6px;
+        } */
+      }
+      /* .toolbar-item {
+        padding: 2px;
+        /* border-right: 2px solid rgba(235, 174, 52, 80%); */
+        /* &:last-child {
+          border-right: none;
+        } */
+      } */
+    /* } */
+    .menu {
+      border: 2px solid rgba(235, 174, 52, 50%);
+      padding: 5px;
+      border-radius: 10px;
+      width: fit-content;
+      min-width: 120px;
+      .menu-item {
+        font-size: 18px;
+        padding: 5px;
+        border: 2px solid rgba(235, 174, 52, 0%);
+        border-radius: 10px;
+        /* border-bottom: 1px solid rgba(128, 128, 128, 20%); */
+        /* width: fit-content; */
+        &:hover {
+          transition: all 0.5s ease-in-out;
+          border: 2px solid rgba(235, 174, 52, 80%);
+          background-color: rgba(255, 236, 153, 20%);
+          border-radius: 10px;
+          cursor: pointer;
+        }
+      }
+    }
   }
+
+  .pointer-animation {
+    display: inline-block;
+    width: 50px;
+    .pointer {
+      width: 40px;
+      animation-name: pointer;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+      animation-direction: normal;
+      animation-iteration-count: infinite;
+    }
+  }
+
+  @keyframes pointer {
+    0% {
+      margin-left: 0;
+    }
+    50% {
+      margin-left: 10px;
+    }
+    100% {
+      margin-left: 0;
+    }
+  }
+
+  /* Semi-dynamic site-wide variables */
 
   .app-mt-5 {
     margin-top: calc(var(--base-multiplier));
