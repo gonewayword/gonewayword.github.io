@@ -17,7 +17,74 @@ Backtrace:
 /usr/local/bin/sass:23:in `load'
 /usr/local/bin/sass:23:in `<main>'
 */
-body:before {
+/* body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Errno::ENOENT: No such file or directory - structure.scss"; }
+  content: "Errno::ENOENT: No such file or directory - structure.scss"; } */
+
+  div.logo-col {
+    text-align: center;
+    img#logo {
+      max-width: 150px;
+    }
+  }
+
+  :root {
+    --base-multiplier: 5px;
+  }
+
+  .app-mt-5 {
+    margin-top: calc(var(--base-multiplier));
+  }
+
+  .app-mt-10 {
+    margin-top: calc(var(--base-multiplier) * 2);
+  }
+
+  .app-mt-15 {
+    margin-top: calc(var(--base-multiplier) * 3);
+  }
+
+  .app-mt-30 {
+    margin-top: calc(var(--base-multiplier) * 6);
+  }
+
+  .app-mb-5 {
+    margin-bottom: 5px;
+  }
+
+  .app-mb-10 {
+    margin-bottom: 10px;
+  }
+
+  .app-mb-15 {
+    margin-bottom: 15px;
+  }
+
+  .app-ml-5 {
+    margin-left: 5px;
+  }
+
+  .app-ml-10 {
+    margin-left: 10px;
+  }
+
+  .app-ml-15 {
+    margin-left: 15px;
+  }
+
+  .app-ml-30 {
+    margin-left: calc(var(--base-multiplier) * 6);
+  }
+
+  .app-mr-5 {
+    margin-right: 5px;
+  }
+
+  .app-mr-10 {
+    margin-right: 10px;
+  }
+
+  .app-mr-15 {
+    margin-right: 15px;
+  }
