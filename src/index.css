@@ -16,7 +16,8 @@
     margin: 0;
   }
   span.pre-title {
-    color: var(--secondary-color);
+    color: var(--primary-color);
+    /* color: var(--secondary-color); */
     font-weight: 700;
     font-family: 'Barlow', sans-serif;
     font-size: 24px;
@@ -36,22 +37,28 @@
     color: rgba(10, 10, 10, 60%);
   }
 
+  .open-curly, .closed-curly {
+    color: var(--secondary-color);
+  }
+
   div.util-col {
     padding-left: 40px;
   }
-  div.toolbar {
+  div.title-col {
     margin-top: 50px;
+  }
+  div.menu {
+    /* margin-top: 50px; */
     div.centralizer {
-      span.toolbar-item-parent {
+      descent-override: ;.toolbar-item-parent {
         font-family: 'Barlow', sans-serif;
         color: var(--primary-color);
         /* color: #658fa5; */
         margin-right: 30px;
         font-size: 24px;
-        font-weight: 600;
+        font-weight: 700;
         cursor: pointer;
         .open-curly, .closed-curly {
-          color: var(--secondary-color);
           visibility: hidden;
           /* transition: all 0.4s ease-in-out; */
         }
@@ -71,39 +78,14 @@
   }
 }
 
-.pointer-animation {
-  display: inline-block;
-  width: 50px;
-  .pointer {
-    width: 40px;
-    animation-name: pointer;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-direction: normal;
-    animation-iteration-count: infinite;
-  }
-}
-
-@keyframes pointer {
-  0% {
-    margin-left: 0;
-  }
-  50% {
-    margin-left: 10px;
-  }
-  100% {
-    margin-left: 0;
-  }
-}
-
 img#logo {
   margin-top: 20px;
-  max-width: 100px;
-  animation-name: logopulse;
+  max-width: 165px;
+  /* animation-name: logopulse;
   animation-duration: 1.5s;
   animation-timing-function: linear;
   animation-direction: normal;
-  animation-iteration-count: infinite;
+  animation-iteration-count: infinite; */
 }
 
 @keyframes logopulse {
@@ -175,6 +157,31 @@ img#logo {
 .app-mr-15 {
   margin-right: 15px;
 }
+
+/* .pointer-animation {
+  display: inline-block;
+  width: 50px;
+  .pointer {
+    width: 40px;
+    animation-name: pointer;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes pointer {
+  0% {
+    margin-left: 0;
+  }
+  50% {
+    margin-left: 10px;
+  }
+  100% {
+    margin-left: 0;
+  }
+} */
 
 /* h1 {
   padding: 0 10px 5px 10px;
