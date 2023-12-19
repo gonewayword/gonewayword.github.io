@@ -1,0 +1,248 @@
+ /* Site Structure Styles */
+
+ :root {
+  --primary-color: #507992;
+  --secondary-color: #e25d01;
+  --tertiary-color: #9cbdd1;
+  --quaternary-color: #1d465f;
+  --quinterary-color: #a02c00;
+  --base-multiplier: 5px;
+  --bs-body-color: rgba(10, 10, 10, 60%);
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .container-fluid {
+    max-width: 100%;
+    margin: 0;
+  }
+  span.pre-title {
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-family: 'Barlow', sans-serif;
+    font-size: 24px;
+  }
+  h1 {
+    font-family: 'Barlow', sans-serif;
+    color: var(--primary-color);
+    font-weight: 700;
+    line-height: 30px;
+    span {
+      font-family: 'Barlow', sans-serif;
+      color: var(--secondary-color);
+    }
+  }
+
+  .subsection {
+    color: rgba(10, 10, 10, 60%);
+  }
+
+  div.util-col {
+    padding-left: 40px;
+  }
+  div.toolbar {
+    margin-top: 50px;
+    div.centralizer {
+      span.toolbar-item-parent {
+        font-family: 'Barlow', sans-serif;
+        color: var(--primary-color);
+        /* color: #658fa5; */
+        margin-right: 30px;
+        font-size: 24px;
+        font-weight: 600;
+        cursor: pointer;
+        .open-curly, .closed-curly {
+          color: var(--secondary-color);
+          visibility: hidden;
+          /* transition: all 0.4s ease-in-out; */
+        }
+        &:hover {
+          .open-curly, .closed-curly {
+            visibility: visible;
+          }
+        }
+      }
+    }
+  }
+  div.cat-col {
+    text-align: center;
+    img#fun-img {
+      max-width: 200px;
+    }
+  }
+}
+
+.pointer-animation {
+  display: inline-block;
+  width: 50px;
+  .pointer {
+    width: 40px;
+    animation-name: pointer;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes pointer {
+  0% {
+    margin-left: 0;
+  }
+  50% {
+    margin-left: 10px;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+
+img#logo {
+  margin-top: 20px;
+  max-width: 100px;
+  animation-name: logopulse;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+}
+
+@keyframes logopulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Semi-dynamic site-wide variables */
+
+.app-mt-5 {
+  margin-top: calc(var(--base-multiplier));
+}
+
+.app-mt-10 {
+  margin-top: calc(var(--base-multiplier) * 2);
+}
+
+.app-mt-15 {
+  margin-top: calc(var(--base-multiplier) * 3);
+}
+
+.app-mt-30 {
+  margin-top: calc(var(--base-multiplier) * 6);
+}
+
+.app-mb-5 {
+  margin-bottom: 5px;
+}
+
+.app-mb-10 {
+  margin-bottom: 10px;
+}
+
+.app-mb-15 {
+  margin-bottom: 15px;
+}
+
+.app-ml-5 {
+  margin-left: 5px;
+}
+
+.app-ml-10 {
+  margin-left: 10px;
+}
+
+.app-ml-15 {
+  margin-left: 15px;
+}
+
+.app-ml-30 {
+  margin-left: calc(var(--base-multiplier) * 6);
+}
+
+.app-mr-5 {
+  margin-right: 5px;
+}
+
+.app-mr-10 {
+  margin-right: 10px;
+}
+
+.app-mr-15 {
+  margin-right: 15px;
+}
+
+/* h1 {
+  padding: 0 10px 5px 10px;
+} */
+
+/* .hover-text {
+  border: 2px solid rgba(235, 174, 52, 0%);
+  border-radius: 6px;
+  &:hover {
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    border: 2px solid rgba(235, 174, 52, 80%);
+    border-radius: 6px;
+  }
+}
+h1.hover-text {
+  transform: translateX(-10px);
+} */
+
+
+/* Former Menu item border */
+/* border-bottom: 1px solid rgba(128, 128, 128, 20%); */
+/* width: fit-content; */
+
+/*
+.toolbar {
+  .toolbar-item-parent {
+    border: 2px solid rgba(235, 174, 52, 0%);
+    border-radius: 6px;
+    color: rgba(10, 10, 10, 60%);
+    padding: 4px;
+    @media screen and (min-width: 600px) {
+      width: 100%;
+    }
+    &:hover {
+      cursor: pointer;
+      transition: all 0.4s ease-in-out;
+      border: 2px solid rgba(235, 174, 52, 80%);
+      border-radius: 6px;
+    } 
+  }
+  .toolbar-item {
+    padding: 2px;
+    border-right: 2px solid rgba(235, 174, 52, 80%);
+    &:last-child {
+      border-right: none;
+    }
+  }
+}
+*/
+
+/* .menu {
+    border: 2px solid rgba(235, 174, 52, 50%);
+    padding: 5px;
+    border-radius: 10px;
+    width: fit-content;
+    min-width: 120px;
+    .menu-item {
+      font-size: 18px;
+      padding: 5px;
+      border: 2px solid rgba(235, 174, 52, 0%);
+      border-radius: 10px;
+      &:hover {
+        transition: all 0.5s ease-in-out;
+        border: 2px solid rgba(235, 174, 52, 80%);
+        background-color: rgba(255, 236, 153, 20%);
+        border-radius: 10px;
+        cursor: pointer;
+      }
+    }
+  } */
