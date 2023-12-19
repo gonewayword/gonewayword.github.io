@@ -26,7 +26,7 @@
     font-family: 'Barlow', sans-serif;
     color: var(--primary-color);
     font-weight: 700;
-    line-height: 30px;
+    line-height: 35px;
     span {
       font-family: 'Barlow', sans-serif;
       color: var(--secondary-color);
@@ -35,6 +35,10 @@
 
   .subsection {
     color: rgba(10, 10, 10, 60%);
+    h2 {
+      color: var(--secondary-color);
+      font-family: 'Barlow', sans-serif;
+    }
   }
 
   .open-curly, .closed-curly {
@@ -51,20 +55,35 @@
     /* margin-top: 50px; */
     div.centralizer {
       descent-override: ;.toolbar-item-parent {
+        margin-top: 30px;
+        &:first-child {
+          margin-top: 10px;
+        }
         font-family: 'Barlow', sans-serif;
         color: var(--primary-color);
         /* color: #658fa5; */
-        margin-right: 30px;
+        /* margin-right: 30px; */
         font-size: 24px;
         font-weight: 700;
         cursor: pointer;
+        .open-curly {
+          margin-right: 2px;
+        }
+        .closed-curly {
+          margin-left: 1px;
+        }
         .open-curly, .closed-curly {
-          visibility: hidden;
-          /* transition: all 0.4s ease-in-out; */
+          opacity: 0;
+          transition: all 0.3s ease-in-out;
+          display: inline-block;
+          transform: translateY(-2px);
+          &.perma {
+            opacity: 1;
+          }
         }
         &:hover {
           .open-curly, .closed-curly {
-            visibility: visible;
+            opacity: 1;
           }
         }
       }

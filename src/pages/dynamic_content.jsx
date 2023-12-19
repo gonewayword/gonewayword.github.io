@@ -22,12 +22,13 @@ function DynamicContent (state) {
   console.log('props? ', state);
   const view = state.view;
   return (
-    <div class="row">
-      <div class="col-md-2"></div>
-      <div class="col-md-10 col-sm-12">
+    // <div class="row">
+    //   <div class="col-md-2"></div>
+    //   <div class="col-md-10 col-sm-12">
+    <div>
         {renderSwitchContent(view)}
-      </div>
     </div>
+    // </div>
   )
 }
 
