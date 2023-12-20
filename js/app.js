@@ -22,9 +22,6 @@ $(document).ready(function() {
             setTimeout(() => {
                 tarjay.addClass('perma');
             }, 50)
-                
-                // .addClass('perma');
-            // $(target).addClass('perma');
         }
     
     }
@@ -41,7 +38,6 @@ $(document).ready(function() {
         app.setView(snatchedClass, e?.target);
     });
 
-    $('')
 });
 
 // class App {

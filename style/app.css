@@ -8,6 +8,8 @@
     --quinterary-color: #a02c00;
     --base-multiplier: 5px;
     --bs-body-color: rgba(10, 10, 10, 60%);
+    --header-font-size: 42px;
+    --subsection-header: 24px;
     * {
       font-family: Arial, Helvetica, sans-serif;
     }
@@ -20,7 +22,7 @@
       /* color: var(--secondary-color); */
       font-weight: 700;
       font-family: 'Barlow', sans-serif;
-      font-size: 24px;
+      font-size: var(--subsection-header);
     }
     h1 {
       font-family: 'Barlow', sans-serif;
@@ -54,7 +56,7 @@
     div.menu {
       /* margin-top: 50px; */
       div.centralizer {
-        descent-override: ;.toolbar-item-parent {
+        .toolbar-item-parent {
           margin-top: 30px;
           &:first-child {
             margin-top: 10px;
@@ -63,7 +65,7 @@
           color: var(--primary-color);
           /* color: #658fa5; */
           /* margin-right: 30px; */
-          font-size: 24px;
+          font-size: var(--subsection-header);
           font-weight: 700;
           cursor: pointer;
           .open-curly {
