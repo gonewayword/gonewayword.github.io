@@ -17,6 +17,9 @@
     <link rel="manifest" href="./manifest.json" />
 
     <title>Brendan Frost</title>
+
+    <script type="text/javascript" src="./util/jquery-3-7-1.js"></script>
+    <script type="text/javascript" src="./util/lodash.js"></script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -42,17 +45,17 @@
             <div class="row">
                 <div class="col-md-3 menu">
                     <div class="centralizer">
-                        <div onclick="setView('engineer')" class="toolbar-item-parent">
+                        <div class="toolbar-item-parent engineer">
                             <span class="open-curly">&#123;</span>
                             Software Portfolio
                             <span class="closed-curly">&#125;</span>
                         </div>
-                        <div onclick="setView('webdev')" class="toolbar-item-parent">
+                        <div class="toolbar-item-parent webdev">
                             <span class="open-curly">&#123;</span>
                             Website Portfolio
                             <span class="closed-curly">&#125;</span>
                         </div>
-                        <div onclick="setView('about')" class="toolbar-item-parent">
+                        <div class="toolbar-item-parent about">
                             <span class="open-curly">&#123;</span>
                             Who I Am
                             <span class="closed-curly">&#125;</span>
@@ -60,7 +63,15 @@
                     </div>
                 </div>
                 <div class="col-md-9 col-sm-12">
-                    <DynamicContent view={view} />
+                  <div class="subsection engineer">
+                      <h2>Senior Software Developer</h2>
+                  </div>
+                  <div class="subsection webdev">
+                    <h2>Custom Website Developer</h2>
+                  </div>
+                  <div class="subsection about">
+                    <h2>About Me</h2>
+                  </div>
                 </div>
             </div>
         </div>
@@ -69,6 +80,6 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-        <script type="text/javascript" link="./js/app.js"></script>
+        <script type="text/javascript" src="./js/app.js"></script>
   </body>
 </html>
