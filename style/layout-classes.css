@@ -1,0 +1,115 @@
+/* Semi-dynamic site-wide spacing classes */
+:root {
+    --base-multiplier: 5px;
+
+    .app-mt-5 {
+        margin-top: calc(var(--base-multiplier));
+    }
+
+    .app-mt-10 {
+        margin-top: calc(var(--base-multiplier) * 2);
+    }
+
+    .app-mt-15 {
+        margin-top: calc(var(--base-multiplier) * 3);
+    }
+
+    .app-mt-30 {
+        margin-top: calc(var(--base-multiplier) * 6);
+    }
+
+    .app-mb-5 {
+        margin-bottom: 5px;
+    }
+
+    .app-mb-10 {
+        margin-bottom: 10px;
+    }
+
+    .app-mb-15 {
+        margin-bottom: 15px;
+    }
+
+    .app-ml-5 {
+        margin-left: 5px;
+    }
+
+    .app-ml-10 {
+        margin-left: 10px;
+    }
+
+    .app-ml-15 {
+        margin-left: 15px;
+    }
+
+    .app-ml-30 {
+        margin-left: calc(var(--base-multiplier) * 6);
+    }
+
+    .app-mr-5 {
+        margin-right: 5px;
+    }
+
+    .app-mr-10 {
+        margin-right: 10px;
+    }
+
+    .app-mr-15 {
+        margin-right: 15px;
+    }
+
+    .app-mh-5 {
+        margin-left: calc(var(--base-multiplier));
+        margin-right: calc(var(--base-multiplier));
+    }
+
+    .app-mh-10 {
+        margin-left: calc(var(--base-multiplier * 2));
+        margin-right: calc(var(--base-multiplier) * 2);
+    }
+
+    .app-mh-15 {
+        margin-left: calc(var(--base-multiplier) * 3);
+        margin-right: calc(var(--base-multiplier) * 3);
+    }
+
+    .app-mh-30 {
+        margin-left: calc(var(--base-multiplier) * 6);
+        margin-right: calc(var(--base-multiplier) * 6);
+    }
+
+    .app-ph-5 {
+        padding-left: calc(var(--base-multiplier));
+        padding-right: calc(var(--base-multiplier));
+    }
+
+    .app-ph-10 {
+        padding-left: calc(var(--base-multiplier * 2));
+        padding-right: calc(var(--base-multiplier) * 2);
+    }
+
+    .app-ph-15 {
+        padding-left: calc(var(--base-multiplier) * 3);
+        padding-right: calc(var(--base-multiplier) * 3);
+    }
+
+    .app-ph-30 {
+        padding-left: calc(var(--base-multiplier) * 6);
+        padding-right: calc(var(--base-multiplier) * 6);
+    }
+    .app-pr-5 {
+        padding-right: calc(var(--base-multiplier));
+    }
+
+    .app-pr-10 {
+        padding-right: calc(var(--base-multiplier) * 2);
+    }
+
+    .app-pr-15 {
+        padding-right: calc(var(--base-multiplier) * 3);
+    }
+
+    .app-pr-30 {
+        padding-right: calc(var(--base-multiplier) * 6);
+    }
+}

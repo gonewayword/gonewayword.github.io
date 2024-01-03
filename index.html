@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="./favicon.ico" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/app.css">
+    <link rel="stylesheet" href="./style/layout-classes.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Website for Brendan Frost, front-end and web developer"
     />
     <link rel="apple-touch-icon" href="./logo192.png" />
 
@@ -26,60 +26,517 @@
     
 
     <div class="app-mt-30 app-ml-30">
-            <div class="row">
-                <div class="col-lg-2 col-md-3 col-sm-12 util-col">
+      
+            <div class="smart-row util-row">
+                <div class="columnar fifth util-col">
                     <img id="logo" src="./img/logo-circle-only-transparent.png"></img>
                 </div>
-                <div class="col-lg-7 col-md-6 title-col">
+                <div class="columnar three-fifths title-col">
                     <span class="pre-title">
                         <span class="open-curly">&#123;</span>
                         Brendan
                         <span class="closed-curly">&#125;</span>
                     </span>
-                    <h1 onclick="setView('about')" class="main-title hover-text">Frost<span>ware</span></h1>
+                    <h1 class="main-title hover-text">Frost<span>ware</span></h1>
+
+                    <div id="contact-widget">
+                      <span class="info"><a href="mailto:brendangfrost@gmail.com" target="_blank"><!--
+                      --><span class="open-curly">&#123;</span>Email Me<span class="closed-curly">&#125;</span><!--
+                    --></a></span>|<!--
+                    --><span class="info"><a href="https://github.com/gonewayword/" target="_blank"><!--
+                      --><span class="open-curly">&#123;</span>GitHub<span class="closed-curly">&#125;</span><!--
+                    --></a></span>|<!--
+                    --><span class="info"><a href="https://www.linkedin.com/in/brendanfrost/" target="_blank"><!--
+                      --><span class="open-curly">&#123;</span>LinkedIn<span class="closed-curly">&#125;</span><!--
+                      --></a></span>
+                    </div>
                 </div>
-                <div class="col-md-3 cat-col">
+                <div class="columnar fifth cat-col">
                     <img id="fun-img" src="./img/laptop-cat-1.png"></img>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-2 menu">
+            <br />
+            <br />
+            <div class="smart-row content">
+
+              <!-- MENU -->
+                <div class="columnar fifth menu">
                     <div class="centralizer">
-                        <div class="toolbar-item-parent engineer">
-                            <span class="open-curly">&#123;</span>
-                            Software Portfolio
-                            <span class="closed-curly">&#125;</span>
-                        </div>
-                        <div class="toolbar-item-parent webdev">
-                            <span class="open-curly">&#123;</span>
-                            Website Portfolio
-                            <span class="closed-curly">&#125;</span>
-                        </div>
                         <div class="toolbar-item-parent about">
                             <span class="open-curly">&#123;</span>
-                            Who I Am
+                            whoami
+                            <span class="closed-curly">&#125;</span>
+                        </div>
+                        <div class="toolbar-item-parent experience">
+                            <span class="open-curly">&#123;</span>
+                            Experience
+                            <span class="closed-curly">&#125;</span>
+                        </div>
+                        <div class="toolbar-item-parent portfolio">
+                            <span class="open-curly">&#123;</span>
+                            Portfolio
                             <span class="closed-curly">&#125;</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-10 col-sm-12">
-                  <div class="subsection engineer">
-                      <h2>Senior Software Developer</h2>
-                  </div>
-                  <div class="subsection webdev">
-                    <h2>Custom Website Developer</h2>
-                  </div>
+
+                <!-- DYNAMIC INNER CONTENT -->
+                <div class="columnar four-fifths"> 
+
                   <div class="subsection about">
                     <h2>About Me</h2>
+
+                    <div class="smart-row">
+                      <div class="columnar">
+                        <img id="self" src="img/li-profile-1.png" />
+
+                        <div class="inner-content app-pr-30">
+                          <!-- <p>
+                            Based in New Orleans, Louisiana, I am a senior-level front-end software developer, experienced web developer, and author of fiction and non-fiction.
+                          </p>
+                          <p>
+                            
+                          </p>
+                          <p>
+                            Based in New Orleans, Louisiana, I am a senior-level front-end software developer, experienced web developer, and author of fiction and non-fiction.
+                          </p> -->
+
+                          <p>
+                            Hi there, I'm Brendan Frost, and you can find me in that exciting space where <span class="flair">technology and creativity blend</span> together--which is
+                            nearly everywhere, these days. As a dedicated and seasoned <span class="flair">senior-level Front-End Software Engineer and Web Developer</span>, I've long had a penchant 
+                            and passion for transforming complex technical challenges into easy and beautiful user experiences. Originally from Washington, D.C., 
+                            I've lived in the Midwest and have now been in New Orleans, Louisiana for around 13 years.
+                          </p>
+                          
+                          <p>
+                            My entry into the tech world was unorthodox, with a background in English and creative writing, including a stint as an English Composition 
+                            Instructor at the University of New Orleans, a trainer of employees captioning phone calls for the hard-of-hearing, a retail shop manager, a lawncare worker, all of 
+                            which honed my communication and leadership skills. In short, I can get along well and work effectively with anyone.
+                          </p>
+
+                          <p>
+                            In 2017, I leapt headlong into the world of software through the Advanced Software Engineering Immersive Program at Operation 
+                            Spark, a sister program of San Francisco's Hack Reactor--and identical in coursework and level of challenge. Since then, I've 
+                            grown into the Tech Nerd, Codemonger, Software Knowledge + Fiction + History Nerd that I never knew I was destined to become.
+                            It has been on a ridiculously fun and challenging journey to work with innovative companies like Leviton and Zehnder Communications. My role at Leviton, 
+                            I've evolved from a Website-maker and JavaScript Slinger, to a Full Stack Software Developer, to the <span class="flair">My Leviton Team Technical Lead</span>. 
+                            At Leviton, I not only contributed to and led the development of impactful projects like My Leviton 3.0 but also embraced the role of 
+                            a mentor and technical advisor, shaping the <span class="flair">future of the development team</span> along with the UX Design Head and Team Management Lead.
+                          </p>
+
+                          <p>
+                            My technical toolbelt spans a broad range of front-end and back-end technologies, with a special love for JavaScript, its 
+                            frameworks like Angular and React, and web development with an emphasis on visual beauty and an obsession with user-friendliness.
+                            I have thrived also in the world of IoT and smart home technology, bringing inanimate objects to 
+                            life with code inside of a highly large and sophisticated codebase shaped around best practices, requiring interaction with a huge 
+                            variety of other specialists, including the firmware, cloud and hardware teams. I am nerdily excited by the challenges and rewards of 
+                            turning complex technical requirements into intuitive, user-friendly solutions.
+                          </p>
+
+                          <p>
+                            In my non-professional moments you can find me trying out smart home gadgets, building my own software projects to hack my own life, 
+                            writing a historical fiction or urban-dystopic-fantasy series, reading some philosophy, tailoring thrifted clothes, cooking weird meals, 
+                            or snugglging my cat Chauncey. I also love to enjoy the rich world of New Orleans with friends.
+                          </p>
+
+                          <p>
+                            Welcome to this window into my creative and professional world--take your coat off, stay a while.
+                          </p>
+                          
+                          <p>
+                            Oh, and don't think I forgot about the Cat Tax... here is Chauncey helping me fold my socks.
+                          </p>
+
+                          <img id="chauncey" src="img/chauncey-socks.jpg" />
+
+                          <p>
+                            Here he is enjoying a beautiful day in the garden, back when he used to work out at the cat gym six days a week and had two tails.
+                          </p>
+
+                          <img id="chauncey-gardener" src="img/chauncey-gardener.png" />
+
+                          <p>
+                            And finally, this is him in his much, much younger days, in the late medieval era in full knight's armor.
+                          </p>
+
+                          <img id="chauncey-general" src="img/chauncey-general.png" />
+
+                        </div>
+                      </div>
+                      
+                    </div>
+
                   </div>
+
+                  <div class="subsection experience">
+
+                    <h2>
+                      Curriculum Vitae
+                    </h2>
+                    
+                    <div class="smart-row">
+
+                      <div class="columnar three-quarters">
+
+                        <h3 class="subtitle">
+                          Technical Knowledge
+                        </h3>
+                        
+                        <p>
+                          <strong>Front-end:</strong> Javascript@latest, Typescript,  Angular, React/Native, Ionic, jQuery, CSS/3/SCSS, Greensock, D3 <br />
+                          <strong>Back-end:</strong> Node, PHP, Apache, SQL, MongoDB, Express, Postgres, Firebase, Mongoose <br />
+                          <strong>Technologies:</strong> iOt/smart home, git, bash, Bluetooth [+ Low Energy], OTA, Linux,  Android/iOs testing and deployment,  AWS, Solr, Webpack et al, Mocha, Chai, Heroku, Ajax
+                        </p>
+                        
+                        <h3 class="subtitle">
+                          Professional Experience
+                        </h3>
+                        
+                        <h4 class="organization">Leviton, <span class="timeline">4 years</span></h4>
+                        <h5 class="job-title">Technical Lead, My Leviton Team, <span class="timeline">1 year</span></h5>
+                        <hr>
+                        <ul>
+                          <li>Build/complete all major projects for feature additions, major updates, or high-priority bug situations, and closely supervise and train all team members working on the app’s features/updates/bugs</li>
+                          <li>Continuously assess and improve the team's management methods, best practices, design-to-code pipeline, efficiencies, and latest technologies</li>
+                          <li>Train and continually guide the app team on all things My Leviton, including best practices for safe and efficient app architecture, long-term bug solutions</li>
+                          <li>Act as the source of truth, consultant and advisor for technical questions related to the app for designers, project managers, firmware team, cloud team, and director of Leviton customer support and their team</li>
+                        </ul>
+                        <!-- <h4 class="organization">Leviton</h4> -->
+                        <h5 class="job-title">Software Developer, <span class="timeline">3 years</span></h5>
+                        <hr>
+                        <ul>
+                          <li>Contribute to release of My Leviton 3.0, an app with more than 800,000 users which communicates with millions of devices daily; ensure smooth pushes to production and publication to Android and iOs app stores</li>
+                          <li>Build and add major features including  dashboard which collates all app features, devices and functionality into a, dynamic, sortable and customizable user view; biometric login; device activity scheduling; August and Schlage Lock Integrations; app registration; app settings; firmware updates page; a redesigned My Leviton Webapp</li>
+                          <li>Build internal Project Flow Management application for improved inter-office communication for projects</li>
+                          <li>Learn and dive into Leviton’s huge suite of products, services and internal APIs, systems and methods</li>
+                          <li>Work with UX designer to implement new cleaner app CSS standards based on Block Element Modifier</li>
+                        </ul>
+                        <h4 class="organization">Zehnder Communications</h4>
+                        <h5 class="job-title">Full Stack Software Engineer, <span class="timeline">~3 years</span></h5>
+                        <hr>
+                        <ul>
+                          <li>Built websites and applications on tight deadlines for mid- to enterprise-level clients</li>
+                          <li>Created robust, secure applications involving transactions, events, schedules and other complex interactions</li>
+                          <li>Adhered to careful Git standards internally plus client-facing standards such as ADA, Pagespeed and more</li>
+                          <li>Worked with AS/PM/design teams to bring projects efficiently from concept to fruition</li>
+                        </ul>
+    
+                        <br />
+                        <h5 class="job-title">Crescent City Vape | Social Media & Organizational Manager, <span class="timeline">2014 - 2016</span></h5>
+                        <hr>
+                        <h5 class="job-title">University of New Orleans | English Composition Instructor, <span class="timeline">2011-2014</span></h5>			                                        	 
+                        <hr>
+                        
+                        <h3 class="subtitle">
+                          Notable Software Projects
+                        </h3>
+                        <h5 class="job-title">AFCI Breaker Communication</h5>
+                        <ul>
+                          <li><strong>Complexity:</strong> Required transporting data through a Bluetooth Low Energy api to decrypt an AES-CCM passkey, communicating with byte array ACK/NACK responses to parse trip records marked by indices</li>
+                          <li><strong>Cool Factor:</strong> Super fun to dive closer to the firmware/hardware and work with severely space-limited BLE data transfer</li>
+                        </ul>
+
+                        <h5 class="job-title">My Leviton 3.x.x</h5>
+                        <ul>
+                          <li><strong>Complexity:</strong> Almost 1 million users; smart home device interaction with Decora Smart Switches, Dimmers & Voice Dimmers, Fan Speed Controllers, Load Centers, Plugins, and many more; device enrollment, reconfiguration, characteristic OTA updates via WiFi, Bluetooth, Cloud, and device integrations such as Apple HomeKit, Amazon Alexa and Schlage Locks;</li>
+                          <li><strong>Cool Factor:</strong> What isn’t!? Automating homes is awesome. Not least of all for those who really need it.</li>
+                        </ul>
+
+                        <h5 class="job-title">My Leviton webapp [my.leviton.com]</h5>
+                        <ul>
+                          <li><strong>Complexity:</strong> Blending the My Leviton webapp experience smoothly into the marketing-centric landing/intro pages</li>
+                          <li><strong>Cool Factor:</strong> Showing the public what Leviton is about with a fun blend of information and beauty</li>
+                        </ul>
+
+                        <h5 class="job-title">Leviton internal Project Management app</h5>
+                        <ul>
+                          <li><strong>Complexity:</strong> Creating an app that met the needs of the project managers, development teams and administrators between multiple offices at a company new to me at the time</li>
+                          <li><strong>Cool Factor:</strong> Rapidly learning Leviton’s dynamic via a thrown-to-the-wolves style project</li>
+                        </ul>
+
+                        <h5 class="job-title">Visitsouthwalton.com</h5>
+                        <ul>
+                          <li><strong>Complexity:</strong> Gorgeous, dynamic, integrated cinemagraph and parallax visuals; Events Finder; Itinerary Maker; Interactive Map; Listings filters;</li>
+                          <li><strong>Cool Factor:</strong> Creating a stunning cinemagraph-animation splash page for a major tourism client</li>
+                        </ul>
+    
+                        <h5 class="job-title">Z-comm.com</h5>
+                        <ul>
+                          <li><strong>Complexity:</strong> Creating a streamlined, modular “sections” templating system for the Zehnder CMS</li>
+                          <li><strong>Cool Factor:</strong> Building the new digital face of the company</li>
+                        </ul>
+
+                        <h5 class="job-title">Piccadilly.com</h5>
+                        <ul>
+                          <li><strong>Complexity:</strong> All-ajax Manager Portal  + Secure Online Ordering processing 10,000+ transactions</li>
+                          <li><strong>Cool Factor:</strong> Mmm, Piccadilly</li>
+                        </ul>
+
+                        <h5 class="job-title">Campusfederal.org</h5>
+                        <ul>
+                          <li><strong>Complexity:</strong> Building a responsive front-end to parse and present large, changing, legally regulated volumes of product and rate data + Rewriting financial calculators originally written in perl</li>
+                          <li><strong>Cool Factor:</strong> Making a site my friends use</li>
+                        </ul>
+
+                        <h3 class="subtitle">
+                          Education
+                        </h3>
+
+                        <h5 class="job-title">Operation Spark Immersion/Hack Reactor</h5>
+                        <p class="education-item">Advanced Software Engineering Immersive Program, <span class="timeline">2017</span></p>
+                        <h5 class="job-title">University of New Orleans</h5>
+                        <p class="education-item">M.F.A. in Creative Writing, <span class="timeline">2014</span></p>
+                        <h5 class="job-title">University of Wisconsin</h5>
+                        <p class="education-item">B.A. in English Literature, <span class="timeline">2009</span></p>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="subsection portfolio">
+
+                    <h2>
+                      My Work
+                    </h2>
+
+                    <div class="smart-row">
+                      <div class="columnar">
+
+                        <h3 class="subtitle">
+                          My Leviton App & Webapp
+                        </h3>
+    
+                        <!-- <div class="slider my-leviton">
+                          <div class="left-arrow">🠈</div>
+                          <div class="slide-proxy my-leviton"></div>
+                          <div class="right-arrow">🠊</div>
+                        </div> -->
+
+                        <div class="smart-row">
+                        
+                          <div class="columnar half">
+
+                            <h4 class="mono">
+                              Features I built
+                            </h4>
+                            
+                            <ul>
+                              <li>Secure Biometric Login</li>
+                              <li>Dashboard Page to centralize and unify all app features</li>
+                              <li>Smart Leviton Load Center Features
+                                <ul>
+                                  <li>All new features and views for the release of the second-generation smart breaker panel, the Leviton Whole Home Energy Monitor (LWHEM)</li>
+                                  <li>Beautiful animations showcasing a user's live home power usage</li>
+                                  <li>Graphs with historical user energy data, broken down by time, panel, and breakers</li>
+                                  <li>Selection/configuration of essential circuits to remain on in case of power loss</li>
+                                </ul>
+                              </li>
+                              <li>Total revamp of all webapp pages, including products, partners, and support pages</li>
+                              <li>Secure password creation with beautiful live-adaptive UI to explain requirements</li>
+                              <li>August Smartlock Integration</li>
+                              <li>New Pro Program pages</li>
+                            </ul>
+
+                          </div>
+
+                          <div class="columnar half">
+
+                            <h4 class="mono">
+                              Features I worked on, improved, debugged
+                            </h4>
+    
+                            <ul>
+                              <li>Smart device scheduling and automated activities</li>
+                              <li>Over-the-air (OTA) product firmware updates</li>
+                              <li>Password reset with deeplink rerouting</li>
+                              <li>User residence invitation/access revocation</li>
+                              <li>Integrations
+                                  <ul>
+                                    <li>Amazon Alexa</li>
+                                    <li>Google Home</li>
+                                    <li>Apple HomeKit</li>
+                                    <li>Schlage Locks</li>
+                                  </ul>
+                              </li>
+                              <li>Breaker and breaker panel feature improvement, repair, diagnosis and instruction</li>
+                            </ul>
+
+                          </div>
+
+                        </div>
+
+                        <div class="smart-row">
+                        
+                          <!-- <div class="columnar half">
+
+                            <h4 class="mono">
+                              How I helped the team
+                            </h4>
+
+                            <ul>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                            </ul>
+
+                          </div> -->
+
+                          <div class="columnar half">
+    
+                            <h4 class="mono">
+                              Check out the app
+                            </h4>
+    
+                            <div class="leviton-app-link">
+                              <a href="https://www.leviton.com/en/products/my-leviton-app" target="_blank">
+                                Leviton's app showcase
+                              </a>
+                            </div>
+                            
+                            <div class="badge-holder google">
+                              <a href="http://play.google.com/store/apps/details?id=com.leviton.home" class="ml-google-badge">
+                                <img src="./img/google-play-badge.png"/>
+                              </a>
+                            </div>
+        
+                            <div class="badge-holder ios">
+                              <a href="http://apps.apple.com/us/app/my-leviton/id1133724539" class="ml-ios-badge">
+                                <img src="./img/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917.svg"/>
+                              </a>
+                            </div>
+
+                          </div>
+
+                        </div>
+
+                        <br /><br /><br />
+
+                        <h3 class="subtitle">
+                          Visit South Walton
+                        </h3>
+
+                        <br /><br />
+
+                        <div class="shrink-wrapper">
+                          <div class="smart-row trigger">
+                            <div class="columnar left">
+                              <img class="arrow" src="img/pointer-real.png" />
+                            </div>
+                            <div class="columnar right">
+                              <img class="arrow-pointy" src="img/arrow-pointy.png" />
+                            </div>
+                          </div>
+                          <div class="smart-row shrinkee">
+                            <iframe class="showcase" src="http://www.visitsouthwalton.com"></iframe>
+                          </div>
+                        </div>
+    
+                        <br /><br />
+    
+                        <h3 class="subtitle">
+                          Piccadilly
+                        </h3>
+
+                        <br /><br />
+
+                        <div class="shrink-wrapper">
+                          <div class="smart-row trigger">
+                            <div class="columnar left">
+                              <img class="arrow" src="img/pointer-real.png" />
+                            </div>
+                            <div class="columnar right">
+                              <img class="arrow-pointy" src="img/arrow-pointy.png" />
+                            </div>
+                          </div>
+                          <div class="smart-row shrinkee">
+                            <iframe class="showcase" src="https://web.archive.org/web/20200809231730/https://www.piccadilly.com/"></iframe>
+                          </div>
+                        </div>
+
+                        <br /><br />
+
+                        <h3 class="subtitle">
+                          M.O. Walsh, Author
+                        </h3>
+
+                        <br /><br />
+
+                        <div class="shrink-wrapper">
+                          <div class="smart-row trigger">
+                            <div class="columnar left">
+                              <img class="arrow" src="img/pointer-real.png" />
+                            </div>
+                            <div class="columnar right">
+                              <img class="arrow-pointy" src="img/arrow-pointy.png" />
+                            </div>
+                          </div>
+                          <div class="smart-row shrinkee">
+                            <iframe class="showcase" src="http://www.mowalsh.com"></iframe>
+                          </div>
+                        </div>
+    
+                        <br /><br />
+
+                        <h3 class="subtitle">
+                          Justin Maxwell, Playwright
+                        </h3>
+
+                        <br /><br />
+
+                        <div class="shrink-wrapper">
+                          <div class="smart-row trigger">
+                            <div class="columnar left">
+                              <img class="arrow" src="img/pointer-real.png" />
+                            </div>
+                            <div class="columnar right">
+                              <img class="arrow-pointy" src="img/arrow-pointy.png" />
+                            </div>
+                          </div>
+                          <div class="smart-row shrinkee">
+                            <iframe class="showcase" src="http://www.justinmaxwellplaywright.com"></iframe>
+                          </div>
+                        </div>
+
+                        <br /><br />
+
+                         <!-- <h3>
+                          Growl Tracker
+                        </h3>
+    
+                        <h3>
+                          TimeSpace
+                        </h3>
+    
+                        <h3>
+                          Algae Rhythm
+                        </h3>
+    
+                        <h2>
+                          Websites
+                        </h2> -->
+
+                      </div>
+                    </div>
+
+                  </div>
+                  
                 </div>
             </div>
         </div>
 
+        <br />
+        <br />
+        <br />
+        <br />
     
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <div class="copyright">
+          &copy;Brendan Frost, <span id="year"></span>
+        </div>
+
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+        <script type="text/javascript" src="./js/sliders/my-leviton.js"></script>
         <script type="text/javascript" src="./js/app.js"></script>
   </body>
 </html>
