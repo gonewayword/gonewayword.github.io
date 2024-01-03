@@ -1,7 +1,4 @@
- /* Site Structure Styles */
-
- :root {
-    /* Variables/globals */
+:root {
     --primary-color: #507992;
     --secondary-color: #e25d01;
     --tertiary-color: #9cbdd1;
@@ -33,29 +30,21 @@
         }
     }
     h4 {
-        &.organization {
-            /* margin: 0;
-            margin-bottom: 10px; */
-        }
         .timeline {
-            /* margin-left: 30px; */
             color: var(--primary-color)
         }
     }
     h5 {
         &.job-title {
-            /* margin: 2px 0 2px 0; */
             margin: 0;
             font-weight: 700;
             color: var(--secondary-color);
             .timeline {
-                /* margin-left: 30px; */
                 color: var(--primary-color)
             }
         }
     }
 
-    /* Smart Rows [ clean Bootstrap Lite lol ] */
     .smart-row {
         display: inline-flex;
         min-width: 100%;
@@ -121,7 +110,6 @@
         }
     }
 
-    /* Menu */
     .columnar.menu {
         div.centralizer {
             @media screen and (max-width:876px) {
@@ -170,7 +158,6 @@
         }
     }
 
-    /* Layout-specific tweaks */
     .smart-row .columnar.util-col {
         text-align: center;
         cursor: pointer;
@@ -289,13 +276,11 @@
   
     .subsection {
         transition: all 0.4s ease-in-out;
-        /* &.engineer, &.webdev, &.about { */
         display: none;
         opacity: 0;
         &.perma {
             opacity: 1;
         }
-        /* } */
         &.about {
             p:first-child {
                 margin-top: 0;
@@ -322,8 +307,6 @@
         position: relative;
         width: 230px;
         .slide-proxy {
-            /* min-height: 450px;
-            height: fit-content; */
             display: inline-block;
             overflow: hidden;
             position: relative;
@@ -338,7 +321,6 @@
                 color: white;
                 border: 5px solid white;
                 transition: all .25s;
-                /* transform: translateX(-200%); */
                 &.prev {
                     z-index: 10;
                     transform: translateX(-100%);
@@ -383,7 +365,6 @@
             padding-bottom: 3px;
             &:hover {
                 border: solid 2px var(--primary-color);
-                /* box-shadow: #1d465f; */
             }
         }
         .left-arrow {
@@ -430,8 +411,6 @@
                 animation-direction: alternate;
                 animation-iteration-count: 1;
                 transform: rotate(45deg) translateX(0);
-                /* animation-name: bounce-alt; */
-                /* animation-iteration-count: initial; */
             }
         }
         .arrow-pointy {
@@ -459,9 +438,7 @@
       iframe.showcase {
         max-width: 1200px;
         width: 100%;
-        /* width: 90%; */
         height: 600px;
-        /* margin-left: 5%; */
     }
   }
 
@@ -472,20 +449,4 @@
     100% {
         transform: translateX(20px);
     }
-    /* 100% {
-        transform: translateX(0);
-    } */
 }
-
-/* @keyframes bounce-alt-entry {
-
-} */
-
-/* @keyframes bounce-alt {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(45deg);
-    }
-} */
