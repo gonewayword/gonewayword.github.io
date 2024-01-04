@@ -1,6 +1,11 @@
 :root {
     --base-multiplier: 5px;
 
+
+    .wrap-for-long {
+        word-wrap: break-word;
+    }
+
     .app-mt-5 {
         margin-top: calc(var(--base-multiplier));
     }
@@ -110,5 +115,25 @@
 
     .app-pr-30 {
         padding-right: calc(var(--base-multiplier) * 6);
+    }
+
+    @media screen and (max-width: 876px) {
+        .app-mt-5,.app-mt-10,.app-mt-15,.app-mt-20,.app-mt-25,.app-mt-30,
+        .app-mb-5,.app-mb-10,.app-mb-15,.app-mb-20,.app-mb-25,.app-mb-30,
+        .app-ml-5,.app-ml-10,.app-ml-15,.app-ml-20,.app-ml-25,.app-ml-30,
+        .app-mr-5,.app-mr-10,.app-mr-15,.app-mr-20,.app-mr-25,.app-mr-30,
+        .app-mh-5,.app-mh-10,.app-mh-15,.app-mh-20,.app-mh-25,.app-mh-30,
+        .app-ph-5,.app-ph-10,.app-ph-15,.app-ph-20,.app-ph-25,.app-ph-30,
+        .app-pr-5,.app-pr-10,.app-pr-15,.app-pr-20,.app-pr-25,.app-pr-30
+        {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+            padding-left: 0;
+            padding-right: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
     }
 }
