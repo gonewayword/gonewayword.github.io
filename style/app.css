@@ -107,6 +107,9 @@
                 text-align: center;
                 img#fun-img {
                     max-width: 200px;
+                    @media screen and (max-width: 215px) {
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -349,6 +352,11 @@
             @media screen and (max-width:400px) {
                 img#self {
                     float: none;
+                }
+            }
+            @media screen and (max-width:300px) {
+                img#self {
+                    width: 100%;
                 }
             }
         }
