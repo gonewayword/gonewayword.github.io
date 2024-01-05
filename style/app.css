@@ -61,9 +61,6 @@
                 }
             }
         }
-        /* ul {
-            padding-inline-start: 25px;
-        } */
     }
 
     .smart-row {
@@ -417,11 +414,6 @@
             animation-direction: alternate-reverse;
             animation-iteration-count: infinite;
             transform: rotate(0) translateX(0);
-            &.active {
-                animation-direction: alternate;
-                animation-iteration-count: 1;
-                transform: rotate(45deg) translateX(0);
-            }
         }
         .arrow-pointy {
             width: 18px;
@@ -431,16 +423,23 @@
             transition: all 0.3s ease-in-out;
             border-radius: 100%;
             transform: rotate(90deg);
-            &.active {
-                transform: rotate(180deg);
-            }
         }
         .shrinkee {
             transition: all 1s ease-in-out;
             max-height: 0;
             overflow: hidden;
             width: 100%;
-            &.active {
+        }
+        &.active {
+            .arrow {
+                animation-direction: alternate;
+                animation-iteration-count: 1;
+                transform: rotate(45deg) translateX(0);
+            }
+            .arrow-pointy {
+                transform: rotate(180deg);
+            }
+            .shrinkee {
                 width: 100%;
                 max-height: 600px;
             }

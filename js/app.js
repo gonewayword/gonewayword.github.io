@@ -4,6 +4,13 @@ EnumeratedViews = {
     experience: 'experience'
 }
 
+EnumeratedIframes = {
+    vsw: 'https://www.visitsouthwalton.com',
+    piccadilly: 'https://web.archive.org/web/20200809231730/https://www.piccadilly.com/',
+    mowalsh: 'https://www.mowalsh.com',
+    justin: 'https://www.justinmaxwellplaywright.com'
+}
+
 SliderTypes = {
     myLeviton: 'my-leviton'
 }
@@ -32,20 +39,17 @@ $(document).ready(function() {
             * Events
             */
 
-            // $('iframe').remove();
-
             $('.arrow-pointy').click(function(e) {
-                $(this).toggleClass('active');
-                const smartRowOne = $(this)
-                    .parent()
-                    .parent();
-                const arrowSib = smartRowOne
-                    .find('.arrow')
-                    .first();
-                arrowSib.toggleClass('active');
-                const shrinkee = smartRowOne.next();
-                shrinkee.toggleClass('active');
-            })
+                const showcaseId = $(this).data('id');
+                const selectorRoot = '.shrink-wrapper.' + showcaseId;
+                const shrinkWrapper = $(selectorRoot);
+                const isActive = shrinkWrapper.hasClass('active');
+                const iframe = $(selectorRoot + ' iframe');
+                const targetSrc = isActive ? '' : EnumeratedIframes[showcaseId];
+                if (!isActive) iframe.attr('src', targetSrc);
+                shrinkWrapper.toggleClass('active');
+                if (isActive) setTimeout(() => iframe.attr('src', targetSrc), 1500);
+            });
 
         }
 
@@ -190,7 +194,6 @@ $(document).ready(function() {
         infinite: true
     });
     levSlider.initialize();
-    
 
     $('.subsection.' + setView)
         .show()
