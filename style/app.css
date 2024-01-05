@@ -346,6 +346,11 @@
                     max-width: 230px;
                 }
             }
+            @media screen and (max-width:400px) {
+                img#self {
+                    float: none;
+                }
+            }
         }
       }
 
